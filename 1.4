@@ -1,0 +1,8 @@
+docker run devopsdockeruh/exec_bash_exercise
+docker tag devopsdockeruh/exec_bash_exercise exercise
+docker run -d exercise
+docker exec -it hardcore_panini bash
+tail -f ./logs.txt
+
+Secret message is:
+"Docker is easy"
