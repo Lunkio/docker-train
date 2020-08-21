@@ -1,5 +1,5 @@
-$ docker run -d -it --name website ubuntu:16.04 sh -c 'echo "Input website:"; read website; echo "Searching.."; sleep 1; curl http://$website;'
-$ docker exec website apt-get update
-$ docker exec website apt-get install -y curl wget
-$ docker exec -it website bash
-curl helsinki.fi
+$ docker run -it --name website ubuntu:16.04
+$ apt-get update
+$ apt-get install curl
+$ sh -c 'echo "Input:"; read website; echo "Searching.."; sleep 1; curl http://$website;
+$ helsinki.fi
